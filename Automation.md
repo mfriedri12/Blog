@@ -1,5 +1,5 @@
 
-# Some Things I Want to Tell about Automation 
+# Some Things I Want to Non-Economists Tell about Automation 
 
 Automation is a hot topic these days, and economists know it. Many new papers focusing on automation have been published in the last few years, often by high-profile academics in top journals. Some of these papers do little more than reframe established economic wisdom: replace “capital” with “robots” and “total factor productivity” with “artificial intelligence” and voilà, you have a theory of automation. Contrary to the mainly pessimistic popular opinion, these papers usually conclude that we have nothing to worry about. Robots exist to make us rich! Other papers genuinely try to push the envelope by studying “distributional effects” and “transition paths”, aspects of growth that mainstream economics has traditionally ignored—not because they’re not important, but because they are hard! These papers suggest a reality somewhere in between the best of all possible worlds and the robot apocalypse, but as always in academia the results are preliminary, probabilistic, and contested. 
 
@@ -27,27 +27,27 @@ Models are not proof. It is often possible to write two models that have vastly 
 
 Economists use the word “cyclical” to refer to any research concerned with business cycles, which usually occur every 5-10 years. “Secular” refers to any research concerned with slower trends. Automation is a secular research topic, as is economic growth more generally. For the last decade or so, economists have been increasingly concerned with a number of “secular trends”, most of which began sometime in the 1980s. A incomplete list of secular trends is: 
 
-	•	Declining labor share: For the average firm, the ratio of wages paid to total revenue has been declining 
-	•	Declining business dynamism: There are fewer new firms and fewer exiting firms each year 
-	•	Increasing concentration: In many industries the Herfindahl-Hirschman Index has been increasing 
-	•	Increasing markups: Some economists argue that markups, or pure firm profits, have been increasing  
-	•	Declining productivity growth: GDP and it seems productivity has been growing more slowly 
-	•	Increasing inequality: Within country inequality has been increasing across the globe 
+* Declining labor share: For the average firm, the ratio of wages paid to total revenue has been declining 
+* Declining business dynamism: There are fewer new firms and fewer exiting firms each year 
+*Increasing concentration: In many industries the Herfindahl-Hirschman Index has been increasing 
+*Increasing markups: Some economists argue that markups, or pure firm profits, have been increasing  
+*Declining productivity growth: GDP and it seems productivity has been growing more slowly 
+*Increasing inequality: Within country inequality has been increasing across the globe 
            
 Many different explanations have been proposed for these secular trends. Here are a few of the most popular:
 
-	•	Automation: Specifically better and cheaper robots 
-	•	New type of production: Network effects make Facebook fundamentally different from GE, etc 
-	•	Skill-biased technical change: Demand for educated workers is increasing, and vice versa  
-	•	Market power: US antitrust has failed to prevent oligopoly and price gouging 
-	•	Globalization: Outsourcing is behind these trends 
-	•	Demographics: There are just fewer people to start startups, etc
+*Automation: Specifically better and cheaper robots 
+*New type of production: Network effects make Facebook fundamentally different from GE, etc 
+*Skill-biased technical change: Demand for educated workers is increasing, and vice versa  
+*Market power: US antitrust has failed to prevent oligopoly and price gouging 
+*Globalization: Outsourcing is behind these trends 
+*Demographics: There are just fewer people to start startups, etc
 
 It’s perfectly possible that each secular trend has a different cause. For instance, it could be that declining fertility is causing the decline in business dynamism, unchecked oligopoly is increasing concentration, automation is causing a decline in the labor share, and globalization is the cause of increasing inequality. But most economists would prefer a model showing that one cause is behind most or all secular trends. This preference is a manifestation of the general principle known as Occam’s razor, which (according to Wikipedia) is the idea that “when presented with competing hypotheses that make the same predictions, one should select the solution with the fewest possible assumptions.”
 
 This broader secular context makes the study of automation both harder, and easier. It makes it harder, because to be considered really interesting a model of automation should be consistent not just with the declining labor share, but also with 5-10 other secular facts. It makes it easier, because the more facts to match, or more data with which to be consistent, makes disciplining or discerning between models easier, and moves us towards consensus faster. 
 
-3. Equity vs efficiency: a political question 
+### 3. Equity vs efficiency: a political question 
 
 Most economic models are written as decentralized games; each player tries to maximize his or her utility given the game’s rules and the aggregate resource constraint. But every game can also be written as a planner problem. The planner, who is usually thought of as an all-knowing, benevolent, and all-powerful philosopher king, maximizes some “social utility function” given the aggregate resource constraint, without concern for the game or the rules. In my opinion, the overarching goal of economics as a discipline is to understand when the outcome of a game is different from the ideal allocation of the planner. Some economists think that the two are usually similar; these economists tend to wax poetic about the beauty of the “invisible hand” and argue for deregulation. Other economists think that the two rarely coincide; these economists warn about “market failure” and say things like “the rules of the game are rigged.”
 
@@ -57,11 +57,11 @@ The economists who came up with the idea of the planner tried to come up with th
 
 Of course, we do collectively care about equity, at least a little. If under the rules of the game as they are today automation increases the amount of stuff we produce, but completely disenfranchises the working class, it’s still definitely a problem. If automation increases the amount of stuff we produce, but makes some people worse off, it’s still probably a problem. if automation increases the amount of stuff we produce and makes everybody better off, but makes some people waaayy better off, it could stil be a problem. But this question is political, not economic. Economic models of automation can tell you what will happen to total output, what will happen to the working class, and what will happen to the overall distribution of income (or consumption), but they can’t tell you what to do about it. 
 
-II What the models say about automation 
+## II What the models say about automation 
 
 Whew, that was a lot of caveats! But really, if you don’t get the big picture right, the details can be quite dangerous. 
 
-Some MATH:
+### Some MATH:
 
 Economists usually assume that firms have a “constant elasticity of substitution” or CES production function with  two inputs: capital and labor. If you’ve taken an undergraduate microeconomics course you’ve seen at least some version of the CES production function before: the limit as $\sigma \rightarrow 1$ is the “Cobb Douglas” production function; the limit as $\sigma \rightarrow 0$ is the “Leontif” production function, aka perfect complements; the limit as $\sigma \rightarrow \infty$ is the “Linear” production function, aka perfect substitutes.  The CES production function is very flexible, which is why economists rely on it, but like any model it is at least partially wrong. Its biggest flaw in the context of automation is probably something called “homotheticity,” which I will discuss later. As noted before, many models of automation start with CES production function, with $K$ relabeled as “robots:”
 
@@ -74,19 +74,19 @@ $  r = MPK = Y^{\frac{1}{\sigma-1}} (1-\alpha)  A_K^{\frac{\sigma-1}{\sigma}} K^
 
 There are basically two ways to model automation in the context of a CES function with competitive markets:
 
-1. Automation as increases in $A_K$:
+### 1. Automation as increases in $A_K$:
 
 First you can talk about increases in the productivity of capital $A_K$. The implications for this type of “automation” are stark. If the elasticity of substitution $\sigma$ is greater than 1, capital and labor are “gross substitutes” and continued increases in $A_K$ will cause the “labor share” or $\frac{w*L}{Y}$ to converge to $0$.  If the elasticity of substitution $\sigma$ is less than 1, capital and labor are “gross complements” and continued increases in $A_K$ will actually cause the labor share converge to $1$; automation actually increases the wages and employment.  If the elasticity of substitution $\sigma$ is exactly 1, the production function is Cobb Douglass and the labor share is constant forever. But regardless of what happens to the labor share, productivity is improving, so aggregate output is increasing; the only way automation can be bad is if dramatically decreases equity. This would happen, for example, if capital and labor were gross substitutes, and only a few people owned all the capital/robots. The only solution to preserve equity is to tax those people who have the robots and give it to the people who don’t. As long as we can muster the political will to do this, aka implement UBI, we can achieve the rosy future envisioned by John Maynard Keynes in Economic Possibilities for Our Grandchildren. Robots exist to make us rich! 
 
 It is well-documented that the labor share is decreasing and that only a few people own the robots, so if we believe that automation is primarily impacting the production function by increasing $A_K$, we are almost certainly in this last scenario. Long live UBI!  
 
 However, most economists DON’T believe that we are in this sort of world, for three primary reasons:  
-	•	First, as long as there is at least some aggregate complementarity between labor and capital, i.e. they are not perfect substitutes, increases in $A_K$ almost always increases the wage. Really there are two effects on wages: a “displacement” effect due to robots squeezing out workers, and a “productivity” effect due to robots allowing workers to produce more. Theoretically either could dominate, but in most plausible models, the productivity effect wins. This is partially because unlike labor, the supply of robots usually responds to demand; if robots get more productive, we will build more robots, and robots will get cheaper, allowing us to pay workers more. Of course, wages of workers may increase less than the incomes of robot-owners, but you still can’t get really get the unemployment and disenfranchisement that we are seeing now across the American midwest with a basic CES production function. 
-	•	Second, although productivity growth is difficult to measure, most studies suggest it has been slowing down, not speeding up. If in fact $A_K$ has been increasing, that should have shown up as faster or at least not declining productivity growth. (This is an example of how the broader secular context can be used to assess the validity of an economic model of automation). 
-	•	Third and probably most importnatly, even though the labor share is currently decreasing and has been for the last 30 years, it was increasing or constant for at least 50 years before that. This pattern of development caused most economists working in the 70s, 80s and 90s to believe that productivity growth is primarily “labor-augmenting,” or “Hicks Neutral” instead of “capital-augmenting,” or to decide that labor and capital are gross complements, not gross substitutes. Of course, it’s perfectly possible that robots have led to an unusually jump in the productivity of capital over the last 30 years, just as the industrial revolution led to a jump in the productivity of capital around the turn of the 19th century, but in the grand scheme of history it seems less likely that the productivity of capital will keep increasing until labor is all squeezed out.  
+1. First, as long as there is at least some aggregate complementarity between labor and capital, i.e. they are not perfect substitutes, increases in $A_K$ almost always increases the wage. Really there are two effects on wages: a “displacement” effect due to robots squeezing out workers, and a “productivity” effect due to robots allowing workers to produce more. Theoretically either could dominate, but in most plausible models, the productivity effect wins. This is partially because unlike labor, the supply of robots usually responds to demand; if robots get more productive, we will build more robots, and robots will get cheaper, allowing us to pay workers more. Of course, wages of workers may increase less than the incomes of robot-owners, but you still can’t get really get the unemployment and disenfranchisement that we are seeing now across the American midwest with a basic CES production function. 
+2. Second, although productivity growth is difficult to measure, most studies suggest it has been slowing down, not speeding up. If in fact $A_K$ has been increasing, that should have shown up as faster or at least not declining productivity growth. (This is an example of how the broader secular context can be used to assess the validity of an economic model of automation). 
+3. Third and probably most importnatly, even though the labor share is currently decreasing and has been for the last 30 years, it was increasing or constant for at least 50 years before that. This pattern of development caused most economists working in the 70s, 80s and 90s to believe that productivity growth is primarily “labor-augmenting,” or “Hicks Neutral” instead of “capital-augmenting,” or to decide that labor and capital are gross complements, not gross substitutes. Of course, it’s perfectly possible that robots have led to an unusually jump in the productivity of capital over the last 30 years, just as the industrial revolution led to a jump in the productivity of capital around the turn of the 19th century, but in the grand scheme of history it seems less likely that the productivity of capital will keep increasing until labor is all squeezed out.  
 
 
-2. Automation as increases in $\alpha$ (and $A_K$)
+### 2. Automation as increases in $\alpha$ (and $A_K$)
 
 The second way people talk about increases in automation is as increases in $\alpha$. Economists don’t like to assume “parameters” like $\alpha$ change, so they usually tell a story in the background about how aggregate production is actually composed of many discrete “tasks” or “products” that can either be produced entirely humans or entirely by robots; ie, humans and robots are perfect substitutes. At least partially to make things simpler, most “task-based” models assume that $\sigma = 1$, which means that the aggregate (ignoring the “tasks” in the background) the CES production function becomes friendly Cobb-Douglas:
 
@@ -100,18 +100,18 @@ $  \frac{wL}{Y} = \alpha  $
 Automation is still modeled as an increase in $A_K$, but now instead of increasing the labor share directly (because the labor share is always $\alpha$), $A_K$ increases the proportion of tasks performed by robots, which in the aggregate is equivalent to a change in $\alpha$. The task-based framework was introduced by MIT economist David Autor and has been used extensively to study automation by his colleagues Daron Acemeglu & Pascual Restrepo; most of the insights in this section come directly from their work.  
 
 This way of modeling automation is more appealing for at least three reasons: 
-	•	First, we can now think about robots as replacing humans in specific tasks or products/industries, instead of just gradually shrinking the labor share over time. This means that, if critically we assume that workers cannot transition easily between different tasks or different industries, automation can have absolutely negative consequences for some workers, even if the factor effect is still positive, or the productivity effect still dominates the displacement effect for workers as a whole. 
-	•	Second, if at the margin humans and robots are roughly equally productive, even small changes in $A_K$ can cause $\alpha$ and the labor share to increase. This doesn’t resolve the puzzle of decreasing productivity growth in the presence of increasing $A_K$, but it does make it a little less concerning. 
-	•	Third and most importantly, the task-based framework makes it possible to introduce an important force that is not possible to model in a standard CES production function: new tasks. Acemeglu & Restrepo describe a new task as an activity introduced to complement automation, like coding or customer service. The key assumption is that these new tasks are performed by humans and not robots, either because they are too complicated for current technology or require a personal touch. They therefore increase the proportion of all tasks performed by humans, and decreases $\alpha$. The long term effect of automation depends on the rate of robot replacement relative to new task creation. 
+1. First, we can now think about robots as replacing humans in specific tasks or products/industries, instead of just gradually shrinking the labor share over time. This means that, if critically we assume that workers cannot transition easily between different tasks or different industries, automation can have absolutely negative consequences for some workers, even if the factor effect is still positive, or the productivity effect still dominates the displacement effect for workers as a whole. 
+2. Second, if at the margin humans and robots are roughly equally productive, even small changes in $A_K$ can cause $\alpha$ and the labor share to increase. This doesn’t resolve the puzzle of decreasing productivity growth in the presence of increasing $A_K$, but it does make it a little less concerning. 
+3. Third and most importantly, the task-based framework makes it possible to introduce an important force that is not possible to model in a standard CES production function: new tasks. Acemeglu & Restrepo describe a new task as an activity introduced to complement automation, like coding or customer service. The key assumption is that these new tasks are performed by humans and not robots, either because they are too complicated for current technology or require a personal touch. They therefore increase the proportion of all tasks performed by humans, and decreases $\alpha$. The long term effect of automation depends on the rate of robot replacement relative to new task creation. 
 
 I personally prefer to think of new tasks as new services, like dog walking, yoga teaching, or personal training. (The math allows for many interpretations.) These types of services are often called “wealth work” in economic articles and popular media, because wealthy people generally consume more of them. The tendency of wealthy people to increase the share of income they spend on labor-intensive services is a well-documented phenomenon.  It follows that as society as a whole gets richer, it will spend more on services, or in other words that labor will become more important in the aggregate production function. The baseline CES production function cannot capture this effect, because it is homothetic: constant elasticity of substitution implies that the proportion of labor and capital required in production is invariant to scale. New labor-only tasks can thus be thought of as a sneaky way to introduce non-homotheticity into a technically still homothetic CES production function. 
 
-The elephant not in the room: market power 
+### The elephant not in the room: market power 
 
 So far we’ve been making two major assumptions: a CES production function, and competitive markets. Economists love assuming competitive markets, because they usually make everything easy, and they usually make everything efficient. Assuming competitive markets here means that no one firm contributing to the aggregate CES production function has the power to influence the average wage or the average return on capital. But in the real world, firms can often do just this, either due to some sort of natural monopoly or oligopoly, or due to deliberate anti-competitive policy, often through hard to measure government lobbying. Automation could easily increase aggregate firm market power, either because robots and algorithms can be easily patented or concealed from competitive rivals, or because particularly successful beneficiaries of automation like Mark Zuckerberg or Jeff Bezos are able to influence politics and policy on a scale previously unheard of. Although is significant evidence that market power has increased in the last 30 years to the detriment of both equity and efficiency, there has been little research into the possible role of automation. 
 
 
-III Ten takeaways
+## III Ten takeaways
 
 I’ve gone on long enough, so in lieu of a conclusion, here is a list of 10 takeaways: 
 
